@@ -25,3 +25,8 @@ Saya Mohammad Ray Mosaid mengerjakan soal Latihan Praktikum 7 dalam mata kuliah 
 1. Apabila user menekan tombol W, A, S, D atau Up arrow, Bottom arrow, Left arrow, dan Right arrow maka objek player akan bergerak dan skor bertambah 1 setiap objek player berganti arah
 2. Skor hanya akan bertambah 1 apabila user berbelok arah, menge-hold tombol dan juga memencet 1 tombol yang sama secara beruntun tidak akan menambah skor
 3. Skor akan bertambah 5 apabila objek player menyentuh objek obstacle
+
+<h2> Dokumentasi </h2>
+https://user-images.githubusercontent.com/99600360/234341797-7d9fe0a0-7a4e-41fc-babd-a771752f38a8.mp4
+
+
