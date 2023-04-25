@@ -99,6 +99,7 @@ public class Game extends Canvas implements Runnable
         return score;
     }
 
+    // Update score
     public void setScore(int score)
     {
         this.score = this.score + score;
