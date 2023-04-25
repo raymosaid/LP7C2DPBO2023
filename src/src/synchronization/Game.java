@@ -234,6 +234,7 @@ public class Game extends Canvas implements Runnable
                 // If the player touches the box object then the score increases
                 if (handler.collision(player, obstacle) == 1){
                     handler.collision(player, obstacle);
+                    this.setScore(+5);
                 }
             }
         }

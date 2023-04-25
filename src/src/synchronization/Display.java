@@ -40,7 +40,6 @@ public class Display extends Canvas
         // Initialize additional options.
         this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.frame.setLocationRelativeTo(null);
-        
         this.frame.setResizable(false);
     }
     
