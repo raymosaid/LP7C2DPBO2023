@@ -10,8 +10,13 @@ import java.util.Random;
 
 /**
  *
- * @author Satria Ramadhani
+ * @author Ray Mosaid
  */
+
+/*
+Saya Mohammad Ray Mosaid 2004942 mengerjakan soal Latihan Praktikum 7 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
+*/
+
 public class Handler implements GameInterface
 {
     /**
@@ -66,7 +71,7 @@ public class Handler implements GameInterface
         this.object.remove(object);
     }
     
-    // Collision handler
+    // Collision handler for obstacle random move and to make Player Object cn "touch" the Obstacle Object
     public int collision(GameObject player, GameObject obstacle){
         if (((player.getX() + player.getWidth()) >= obstacle.getX()) && (player.getY()+player.getHeight() >= obstacle.getY()) && (player.getX() <= obstacle.getX() + obstacle.getWidth()) && (player.getY() <= obstacle.getY() + obstacle.getHeight())) {
             obstacle.setX(rand.nextInt(640));

@@ -11,8 +11,13 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Satria Ramadhani
+ * @author Ray Mosaid
  */
+
+/*
+Saya Mohammad Ray Mosaid 2004942 mengerjakan soal Latihan Praktikum 7 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
+*/
+
 public class Display extends Canvas
 {
     // JFrame declaration.

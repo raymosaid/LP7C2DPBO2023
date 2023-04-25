@@ -14,8 +14,13 @@ import java.awt.image.BufferStrategy;
 
 /**
  *
- * @author Satria Ramadhani
+ * @author Ray Mosaid
  */
+
+/*
+Saya Mohammad Ray Mosaid 2004942 mengerjakan soal Latihan Praktikum 7 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
+*/
+
 public class Game extends Canvas implements Runnable
 {
     /**
@@ -231,10 +236,10 @@ public class Game extends Canvas implements Runnable
             // Null check
             if (player != null && obstacle != null) 
             {
-                // If the player touches the box object then the score increases
+                // If Player Object touche the Obstacle Object then the score increase and also do collision (move Obstacle Object)
                 if (handler.collision(player, obstacle) == 1){
-                    handler.collision(player, obstacle);
                     this.setScore(+5);
+                    handler.collision(player, obstacle);
                 }
             }
         }

@@ -9,8 +9,13 @@ import java.awt.Graphics;
 
 /**
  *
- * @author Tieza
+ * @author Ray Mosaid
  */
+
+/*
+Saya Mohammad Ray Mosaid 2004942 mengerjakan soal Latihan Praktikum 7 dalam mata kuliah DPBO untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
+*/
+
 public class Obstacle extends GameObject{
     // Default constructor.
     public Obstacle()
@@ -20,7 +25,7 @@ public class Obstacle extends GameObject{
         super.setWidth(30);
     }
     
-    // Constructor with player position.
+    // Constructor with obstacle position.
     public Obstacle(int x, int y)
     {
         super(x, y, "Obstacle");
@@ -35,7 +40,7 @@ public class Obstacle extends GameObject{
     @Override
     public void render(Graphics object)
     {
-        // Set player shape.
+        // Set obstacle shape.
         object.setColor(Color.decode("#87CEEB"));
         object.fillRect(x, y, 30, 30);
     }
@@ -47,7 +52,7 @@ public class Obstacle extends GameObject{
         this.x += this.velX;
         this.y += this.velY;
         
-        // Initialize player bound, so it won't get offset the display.
+        // Initialize obstacle bound, so it won't get offset the display.
         x = Game.clamp(x, 0, (Game.width - 50));
         y = Game.clamp(y, 0, (Game.height - 70));
     }
