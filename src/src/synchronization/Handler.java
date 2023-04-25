@@ -66,6 +66,21 @@ public class Handler implements GameInterface
         this.object.remove(object);
     }
     
+    // Collision handler
+    public int collision(GameObject player, GameObject obstacle){
+        if (((player.getX() + player.getWidth()) >= obstacle.getX()) && (player.getY()+player.getHeight() >= obstacle.getY()) && (player.getX() <= obstacle.getX() + obstacle.getWidth()) && (player.getY() <= obstacle.getY() + obstacle.getHeight())) {
+            System.out.println("Collision");
+            System.out.println(player.getX() + " + " + player.getWidth() + " >=" + obstacle.getX());
+            System.out.println(player.getY() + " + " + player.getHeight() + " >= " + obstacle.getY());
+            System.out.println(player.getX() + " <= " + obstacle.getWidth() + " + " + obstacle.getX());
+            System.out.println(player.getX() + " <= " + player.getWidth() + " + " + obstacle.getX());
+            obstacle.setX(rand.nextInt(640));
+            obstacle.setY(rand.nextInt(480));
+            return 1;
+        }
+        return 0;
+    }
+    
     /**
      * 
      * Override interface.

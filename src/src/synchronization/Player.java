@@ -22,6 +22,7 @@ public class Player extends GameObject
     {
         super(0, 0, "Player");
         super.setHeight(30);
+        super.setWidth(30);
     }
     
     // Constructor with player position.
@@ -29,6 +30,7 @@ public class Player extends GameObject
     {
         super(x, y, "Player");
         super.setHeight(30);
+        super.setWidth(30);
     }
     
     /**

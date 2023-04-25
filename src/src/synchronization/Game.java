@@ -62,6 +62,7 @@ public class Game extends Canvas implements Runnable
             if(running)
             {
                 handler.add(new Player(320, 160));
+                handler.add(new Obstacle(100, 160));
             }
         } catch(Exception e)
         {
@@ -158,7 +159,7 @@ public class Game extends Canvas implements Runnable
         BufferStrategy bs = this.getBufferStrategy();
         if(bs == null)
         {
-            this.createBufferStrategy(SOMEBITS);
+            this.createBufferStrategy(3);
             return;
         }
         
@@ -191,6 +192,7 @@ public class Game extends Canvas implements Runnable
     public void loop()
     {
         GameObject player = null;
+        GameObject obstacle = null;
         
         handler.loop();
         if(this.running)
@@ -218,6 +220,20 @@ public class Game extends Canvas implements Runnable
                 if(handler.get(i).getType().equals("Player"))
                 {
                     player = handler.get(i);
+                }
+                else if(handler.get(i).getType().equals("Obstacle"))
+                {
+                    obstacle = handler.get(i);
+                }
+            }
+            
+            
+            // Null check
+            if (player != null && obstacle != null) 
+            {
+                // If the player touches the box object then the score increases
+                if (handler.collision(player, obstacle) == 1){
+                    handler.collision(player, obstacle);
                 }
             }
         }
